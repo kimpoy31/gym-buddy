@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Vina+Sans&display=swap');
+
+:root{
+  --grey: #e9e9e9;
+  --light: #f1f1f1;
+  --highlight: rgb(220, 20, 60);
+
+  --light-tint: rgba(255, 255, 255, 0.5);
+  --dark-tint: rgba(0, 0, 0, 0.3);
+}
+
+*{
+  /* font-family: 'Vina Sans', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: var(--grey);
+}
+
+
+/* Content */
+.rootLayout main{
+  display: flex;
+  width: 100vw;
+  gap: 3rem;
+
+  padding: 0 4rem;
+}
+
+.table{
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.form{
+  width: 20%;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Content */
+  .rootLayout main{
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 0 1rem;
+    gap: .5rem;
+  }
+
+  .table{
+    width: 100%;
+  }
+  
+  .form{
+    width: 100%;
+  }
+}

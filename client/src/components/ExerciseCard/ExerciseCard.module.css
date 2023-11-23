@@ -1,0 +1,54 @@
+.exerciseCard{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    gap: .2rem;
+
+    background-color: var(--light-tint);
+}
+
+.exerciseCard h2{
+    color: var(--highlight);
+}
+
+/* input fields */
+.exerciseCard input{
+    width: 50%;
+    font-size: 1.3rem;
+    padding: .2rem;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.exerciseTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: .3rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    cursor: pointer; 
+    border-radius: .2rem;
+}
+
+.icon:hover{
+    background-color: var(--dark-tint);
+}
+
+.icon *{
+    fill: var(--highlight);
+}
